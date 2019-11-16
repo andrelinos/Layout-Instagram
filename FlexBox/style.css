@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+html,
+body,
+#app {
+  max-width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+#top{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  border-bottom: 1px #333;
+}
+.item {
+  display: flex;
+  width: auto;
+  height: 38px;
+  font-size: 1.7em;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#app #top .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#app #top .logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  float: 1;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background: #fafafa;
+  overflow-y: hidden;
+  padding-top: 3px;
+  margin-top: 50px;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 68px;
+  height: 90px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin: 4px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.friends .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 64px;
+  height: 64px;
+  padding: 0px;
+  
+  /* background color instagram */
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  /* from: stackoverflow.com */
+}
+
+.friends img {
+  width: 100%;
+  max-width: 56px;
+  height: auto;
+  max-height: 56px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: auto;
+}
+
+.friends span {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-top: 4px;
+}
+#list {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
+
+#list .pubs {
+  display: flex;
+  flex: 1;
+  height: auto;
+  flex-direction: column;
+  background: #ffffff;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 100%;
+}
+
+.author {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+
+  align-items: center;
+  width: 100%;
+}
+.author img {
+  display: flex;
+  flex: 1;
+  width: 32px;
+  height: 32px;
+  margin: 5px 5px 5px 15px;
+  border-radius: 50%;
+}
+
+.author .author-inf {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
+}
+
+.author > div.post-share > i {
+  font-size: 0.8em!important;
+  margin-right: 15px;
+}
+.author .author-inf .author-location {
+  font-size: 0.8em;
+  color: rgb(163, 163, 163);
+}
+
+#list > div > div.image > img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+#list .btns {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#list .pubs #buttons {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  align-items: center;
+}
+
+#list .pubs #buttons .bts {
+  margin: 5px;
+  font-size: 1.5em;
+  font-display: block;
+  font-style: normal;
+}
+
+#list .pubs #buttons .like {color: #333;}
+#list .pubs #buttons .comments {color: #333;}
+#list .pubs #buttons .share {color: #222;}
+#list .pubs .btn-save {color: #222;font-size: 1.5em;margin: 5px 15px 5px 5px;}
+
+
+#list > div > div.post-views,
+#list > div > div.post-likes {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  padding: 0;
+}
+#list > div > div.post-views span,
+#list > div > div.post-likes span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#list .author-text { max-width: 90%;  margin-top: 5px; }
+
+#footer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  max-height: 50px;
+  align-items:flex-start ;
+  justify-content: space-between;
+  background: #fff;
+  bottom: 0;
+}
+
+#footer .buttons {
+  display: flex;
+  width: 37px;
+  height: 37px;
+  margin: 5px;
+  align-items:center ;
+  justify-content: center;
+}
+#footer > .buttons > i {
+  font-size: 1.6em;
+}
+
+@media (min-width: 1100px) {
+  #list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #list .pubs {
+    max-width: 500px;
+    min-width: 500px;
+    margin: 5px;
+  }
+}
